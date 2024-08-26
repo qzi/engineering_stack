@@ -1,4 +1,5 @@
-const express = require('express');
+// const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 // Define routes
@@ -25,4 +26,4 @@ router.delete('/users/:id', (req, res) => {
   res.send(`Delete user ${userId}`);
 });
 
-module.exports = router;
+export default router;
